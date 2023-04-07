@@ -7,7 +7,7 @@ const sequelize = new Sequelize({
     storage: process.env.PG_URI,
     dialect: 'postgres',
     username: 'postgres',
-    password: 'Cochiloxo69$',
+    password: 'my_password',
     port: '8080'
 })
 
