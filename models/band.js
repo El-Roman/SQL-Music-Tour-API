@@ -11,7 +11,6 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      
     }
   }
   Band.init({
@@ -21,26 +20,27 @@ module.exports = (sequelize, DataTypes) => {
       autoIncrement: true
     },
     name: {
-      type: DataTypes.STRING,
-      allowNull: false
+        type: DataTypes.STRING,
+        allowNull: false
     },
     genre: {
-      type: DataTypes.TEXT,
-      allowNull: false
+        type: DataTypes.TEXT,
+        allowNull: false
     },
     available_start_time: {
-      type: DataTypes.DATE,
-      allowNull: false
+        type: DataTypes.DATE,
+        allowNull: false
     },
     end_time: {
-      type: DataTypes.DATE,
-      allowNull: false
+        type: DataTypes.DATE,
+        allowNull: false
     }
   }, {
     sequelize,
     modelName: 'Band',
-    tableName: 'band',
+    tableName: 'bands',
     timestamps: false
-  });
+  })
+
+  };
   return Band;
-};
