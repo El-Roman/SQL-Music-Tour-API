@@ -4,7 +4,7 @@ const db = require('../models')
 const { Stage, Event } = db 
 const { Op } = require('sequelize')
 
-// FIND ALL
+
 stages.get('/', async (req, res) => {
     try {
         const foundStages = await Stage.findAll({

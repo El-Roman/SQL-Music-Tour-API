@@ -3,7 +3,7 @@ const db = require('../models')
 const { Event, MeetGreet, SetTime, Stage, Band } = db
 const { Op } = require('sequelize')
 
-// FIND ALL
+
 events.get('/', async (req, res) => {
     try {
         const foundEvents = await Event.findAll({
